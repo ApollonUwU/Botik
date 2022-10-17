@@ -1,12 +1,12 @@
 import { useRef } from "react";
-import "../styles/nav.css";
+import "./nav.css";
 
 
-function Navbar() {
-    const navRef = useRef();
+const Navbar = () => {
+    const navRef = useRef(); //useRef hook
 
     const showNavbar = () => {
-        navRef.current.classList.toggle("responsive_nav");
+        navRef.current.classList.toggle("responsive_nav"); //responsible for showing or not shoving menu on clicking on 📃 and ❌
     };
 
     return (

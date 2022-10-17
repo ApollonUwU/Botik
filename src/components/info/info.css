@@ -1,0 +1,24 @@
+.content {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  color: #eee;
+}
+
+.w-back {
+  padding: 5%;
+  width: 100%;
+  background-color: #202020;
+  color: #eee;
+}
+
+main {
+  margin-top: 25%;
+  margin-bottom: 17%;
+}
+
+.quote {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #f56fe9);
+  border-radius: 8px;
+  padding: 1%;
+}

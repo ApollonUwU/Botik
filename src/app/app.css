@@ -38,27 +38,37 @@ body {
   background-size: 400% 100%;
 }
 
-.content {
-  position: absolute;
-  left: 20%;
-  right: 20%;
-  color: #eee;
+ul {
+  counter-reset: index;
+  padding: 0;
+  max-width: 300px;
 }
 
-.w-back {
-  padding: 5%;
-  width: 100%;
-  background-color: #202020;
-  color: #eee;
+li {
+  counter-increment: index;
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  box-sizing: border-box;
 }
 
-main {
-  margin-top: 25%;
-  margin-bottom: 17%;
-}
-
-.quote {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #f56fe9);
-  border-radius: 8px;
-  padding: 1%;
+li::before {
+  content: counters(index, ".", decimal-leading-zero);
+  font-size: 1.5rem;
+  text-align: right;
+  font-weight: bold;
+  min-width: 50px;
+  padding-right: 12px;
+  font-variant-numeric: tabular-nums;
+  align-self: flex-start;
+  background-image: linear-gradient(
+    to bottom,
+    #ee7752,
+    #e73c7e,
+    #23a6d5,
+    #23d5ab
+  );
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
