@@ -12,9 +12,7 @@ function App() {
           <Navbar />
         </React.Fragment>
       </div>
-      <React.Fragment>
-        <Infopage />
-      </React.Fragment>
+      <Infopage />
     </div>
 
   );
